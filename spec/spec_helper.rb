@@ -3,9 +3,10 @@
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
-require 'capybara/rspec'
 require 'declarative_authorization/maintenance'
 include Authorization::TestHelper
+
+Capybara.javascript_driver = :webkit
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
