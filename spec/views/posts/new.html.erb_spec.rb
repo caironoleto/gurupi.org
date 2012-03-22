@@ -12,6 +12,5 @@ describe "posts/new.html.erb" do
       assert_select "input#post_title", name: 'post[title]'
       assert_select "textarea#post_body", name: 'post[body]'
     end
-    # end
   end
 end
