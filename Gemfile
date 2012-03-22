@@ -1,8 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'bundler'
-gem 'rake', '0.9.2'
-gem 'rails', '~> 3.1'
+gem 'rails', '3.2.2'
 gem 'sqlite3'
 
 gem 'omniauth', '>= 0.2.6'
@@ -10,16 +8,10 @@ gem 'declarative_authorization'
 gem 'jquery-rails'
 gem 'rdiscount'
 
-group :development do
+group :development, :test do
+  gem 'capybara-webkit', '0.11.0'
   gem 'capistrano'
-end
-
-group :test do
-  gem 'rspec-rails', '~> 2.4'
-  gem 'capybara'
-  gem 'launchy'
-  gem 'machinist', '>= 2.0.0.beta2'
+  gem 'rspec-rails'
+  gem 'machinist'
   gem 'database_cleaner'
-  gem 'guard'
-  gem 'guard-rspec'
 end
