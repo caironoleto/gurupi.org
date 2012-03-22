@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-GurupiOrg::Application.config.secret_token = 'deb188f0820dea1f71b3837a9ce7c35450204c1fa65331088f474992b79d7fee3c58b3b4ab3b5bd770ab598d007c564b441d73bf7e4a9b4c6a4dd3d16335c1de'
+GurupiOrg::Application.config.secret_token = 'a0f5cb95240fdba11d4d607809bffd45608bd8bdb4cc9830ad4ded19f6ef71f3d3bd1fb3ebe1a6b0894a3939a2fff0c95c04e8d0c01f64799f7231738165f7e1'
